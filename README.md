@@ -648,7 +648,7 @@ This project demonstrates how to build and deploy a **real-world AWS cloud appli
     </td>
     <td align="center" width="50%">
       <strong>2. Employee Registration Form (UI)</strong><br><br>
-      <img src="https://github.com/user-attachments/assets/52bead45-8749-4c9e-9635-cd08b5f48c40" width="100%">
+      <img src="https://github.com/user-attachments/assets/3ac1be3f-eaa5-4177-afb6-7305248be8ba" width="100%">
     </td>
   </tr>
   <tr>
@@ -668,7 +668,7 @@ This project demonstrates how to build and deploy a **real-world AWS cloud appli
     </td>
     <td align="center" width="50%">
       <strong>6. DynamoDB Table — Stored Record</strong><br><br>
-      <img src="https://github.com/user-attachments/assets/3ac1be3f-eaa5-4177-afb6-7305248be8ba" width="100%">
+      <img src="https://github.com/user-attachments/assets/52bead45-8749-4c9e-9635-cd08b5f48c40" width="100%">
     </td>
   </tr>
   <tr>
