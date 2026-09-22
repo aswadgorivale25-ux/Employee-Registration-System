@@ -639,20 +639,58 @@ This project demonstrates how to build and deploy a **real-world AWS cloud appli
 
 ---
 ##OUTPUT##
-<img width="1366" height="768" alt="{53C67E9F-D6DD-490E-8053-49A887EAB833}" src="https://github.com/user-attachments/assets/19270564-66dd-448b-81b7-be8f54207ee2" />
+---
 
-<img width="1366" height="768" alt="{93EEDEFC-E626-4A10-8D47-26DB887CC27A}" src="https://github.com/user-attachments/assets/42950850-a9b7-41b0-96c0-bca04f6e1428" />
+## 📸 Output / Screenshots
 
-<img width="1366" height="768" alt="{CA61462B-9F7C-4302-8FB1-68C64C35DFFB}" src="https://github.com/user-attachments/assets/4a97215b-e831-403e-811f-72b1cbade165" />
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <strong>1. Employee Registration Form (UI)</strong><br><br>
+      <img src="<img width="1366" height="768" alt="ers6" src="https://github.com/user-attachments/assets/3ac1be3f-eaa5-4177-afb6-7305248be8ba" />
+" width="100%">
+    </td>
+    <td align="center" width="50%">
+      <strong>2. Filled Registration Form</strong><br><br>
+      <img src="<img width="1366" height="768" alt="ers2" src="https://github.com/user-attachments/assets/52bead45-8749-4c9e-9635-cd08b5f48c40" />
+" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <strong>3. Successful Submission Message</strong><br><br>
+      <img src="<img width="1366" height="768" alt="ers3" src="https://github.com/user-attachments/assets/5330452f-d0fc-4e3b-8ccb-4705dd6db58e" />
+"
+" width="100%">
+    </td>
+    <td align="center" width="50%">
+      <strong>4. EC2 Instance Running the App</strong><br><br>
+      <img src="<img width="1366" height="768" alt="ers1" src="https://github.com/user-attachments/assets/71bc8758-118a-4d96-9b24-59a1563af056" />
+">
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <strong>5. S3 Bucket — Uploaded Files</strong><br><br>
+      <img src="<img width="1366" height="768" alt="ers4" src="https://github.com/user-attachments/assets/736c9caa-6f10-484d-839f-cae610517336" />
+" width="100%">
+    </td>
+    <td align="center" width="50%">
+      <strong>6. DynamoDB Table — Stored Record</strong><br><br>
+      <img src="<img width="1366" height="768" alt="ers5" src="https://github.com/user-attachments/assets/3f7d8aea-b356-44a0-8cc9-cea912aa1a33" />
+" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <strong>7. IAM Role / Terminal Output</strong><br><br>
+      <img src="<img width="1366" height="768" alt="ers7" src="https://github.com/user-attachments/assets/6000b3a5-3eaa-44ee-837f-4a7a1ac09351" />
+" width="60%">
+    </td>
+  </tr>
+</table>
 
-<img width="1366" height="768" alt="{489EF96A-A219-470D-8327-DE201E3BE63F}" src="https://github.com/user-attachments/assets/97ae5ffa-7963-4651-8f84-0ec9f54e50ce" />
-
-<img width="1366" height="768" alt="{EB04F7B6-6BBE-4ABC-9A54-C88DFC98CDF7}" src="https://github.com/user-attachments/assets/793fc041-92c1-44ee-9d3f-b87335ea843c" />
-
-<img width="1366" height="768" alt="{DF5B78ED-03B4-4860-B5D2-50A927295764}" src="https://github.com/user-attachments/assets/faf8f35f-c114-4357-9ddb-e4ad25aa1aac" />
-
-<img width="1366" height="768" alt="{B66E140D-85BC-4121-9826-71C02415A002}" src="https://github.com/user-attachments/assets/5ff12a5b-0d28-4e91-b69f-41878898f960" />
-
+---
 
 
 
