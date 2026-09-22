@@ -638,60 +638,46 @@ PM2
 This project demonstrates how to build and deploy a **real-world AWS cloud application** using multiple AWS services.
 
 ---
-##OUTPUT##
----
-
 ## 📸 Output / Screenshots
 
 <table>
   <tr>
     <td align="center" width="50%">
-      <strong>1. Employee Registration Form (UI)</strong><br><br>
-      <img src="<img width="1366" height="768" alt="ers6" src="https://github.com/user-attachments/assets/3ac1be3f-eaa5-4177-afb6-7305248be8ba" />
-" width="100%">
+      <strong>1. EC2 Instance Running the App</strong><br><br>
+      <img src="https://github.com/user-attachments/assets/71bc8758-118a-4d96-9b24-59a1563af056" width="100%">
     </td>
     <td align="center" width="50%">
-      <strong>2. Filled Registration Form</strong><br><br>
-      <img src="<img width="1366" height="768" alt="ers2" src="https://github.com/user-attachments/assets/52bead45-8749-4c9e-9635-cd08b5f48c40" />
-" width="100%">
+      <strong>2. Employee Registration Form (UI)</strong><br><br>
+      <img src="https://github.com/user-attachments/assets/52bead45-8749-4c9e-9635-cd08b5f48c40" width="100%">
     </td>
   </tr>
   <tr>
     <td align="center" width="50%">
-      <strong>3. Successful Submission Message</strong><br><br>
-      <img src="<img width="1366" height="768" alt="ers3" src="https://github.com/user-attachments/assets/5330452f-d0fc-4e3b-8ccb-4705dd6db58e" />
-"
-" width="100%">
+      <strong>3. Terminal — Server Running / IAM Role Verified</strong><br><br>
+      <img src="https://github.com/user-attachments/assets/5330452f-d0fc-4e3b-8ccb-4705dd6db58e" width="100%">
     </td>
     <td align="center" width="50%">
-      <strong>4. EC2 Instance Running the App</strong><br><br>
-      <img src="<img width="1366" height="768" alt="ers1" src="https://github.com/user-attachments/assets/71bc8758-118a-4d96-9b24-59a1563af056" />
-">
+      <strong>4. Filled Registration Form / Submission</strong><br><br>
+      <img src="https://github.com/user-attachments/assets/736c9caa-6f10-484d-839f-cae610517336" width="100%">
     </td>
   </tr>
   <tr>
     <td align="center" width="50%">
       <strong>5. S3 Bucket — Uploaded Files</strong><br><br>
-      <img src="<img width="1366" height="768" alt="ers4" src="https://github.com/user-attachments/assets/736c9caa-6f10-484d-839f-cae610517336" />
-" width="100%">
+      <img src="https://github.com/user-attachments/assets/3f7d8aea-b356-44a0-8cc9-cea912aa1a33" width="100%">
     </td>
     <td align="center" width="50%">
       <strong>6. DynamoDB Table — Stored Record</strong><br><br>
-      <img src="<img width="1366" height="768" alt="ers5" src="https://github.com/user-attachments/assets/3f7d8aea-b356-44a0-8cc9-cea912aa1a33" />
-" width="100%">
+      <img src="https://github.com/user-attachments/assets/3ac1be3f-eaa5-4177-afb6-7305248be8ba" width="100%">
     </td>
   </tr>
   <tr>
     <td align="center" colspan="2">
-      <strong>7. IAM Role / Terminal Output</strong><br><br>
-      <img src="<img width="1366" height="768" alt="ers7" src="https://github.com/user-attachments/assets/6000b3a5-3eaa-44ee-837f-4a7a1ac09351" />
-" width="60%">
+      <strong>7. IAM Role / Security Group Configuration</strong><br><br>
+      <img src="https://github.com/user-attachments/assets/6000b3a5-3eaa-44ee-837f-4a7a1ac09351" width="60%">
     </td>
   </tr>
 </table>
-
----
-
 
 
 # 👨‍💻 Author
