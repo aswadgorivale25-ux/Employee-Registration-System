@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Employee Registration</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f3f6fa;
+            color: #1e293b;
+        }
+
+        /* HEADER */
+
+        .header {
+            background: #0f172a;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .career {
+            color: #cbd5e1;
+            font-size: 14px;
+        }
+
+        /* MAIN */
+
+        .container {
+            max-width: 1050px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            border-left: 5px solid #2563eb;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+
+        .hero h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        /* FORM CARD */
+
+        .card {
+            background: white;
+            padding: 30px;
+            margin-bottom: 22px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+
+        .card-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 25px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        /* GRID */
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .full {
+            grid-column: 1 / -1;
+        }
+
+        /* FORM */
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #334155;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #cbd5e1;
+            border-radius: 7px;
+            outline: none;
+            font-size: 14px;
+            background: white;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37,99,235,0.1);
+        }
+
+        textarea {
+            min-height: 110px;
+            resize: vertical;
+        }
+
+        /* UPLOAD */
+
+        .upload-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .upload-box {
+            border: 2px dashed #cbd5e1;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .upload-box:hover {
+            border-color: #2563eb;
+            background: #f8fafc;
+        }
+
+        .upload-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .upload-box h3 {
+            margin-bottom: 8px;
+        }
+
+        .upload-box p {
+            color: #64748b;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        .upload-box input {
+            border: none;
+            padding: 5px;
+        }
+
+        /* TERMS */
+
+        .terms {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .terms input {
+            width: auto;
+            margin-top: 3px;
+        }
+
+        .terms label {
+            font-weight: normal;
+            line-height: 1.5;
+        }
+
+        /* BUTTON */
+
+        .submit-area {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 15px 50px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+        }
+
+        button:disabled {
+            background: #94a3b8;
+            cursor: not-allowed;
+        }
+
+        #message {
+            margin-top: 18px;
+            font-weight: bold;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #0f172a;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+            font-size: 14px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            .header {
+                padding: 18px 20px;
+            }
+
+            .career {
+                display: none;
+            }
+
+            .container {
+                margin-top: 20px;
+            }
+
+            .hero h1 {
+                font-size: 25px;
+            }
+
+            .card {
+                padding: 20px;
+            }
+
+            .grid,
+            .upload-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .full {
+                grid-column: auto;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header class="header">
+
+    <div class="logo">
+        TECHCARE
+    </div>
+
+    <div class="career">
+        Employee Career Portal
+    </div>
+
+</header>
+
+
+<!-- MAIN -->
+
+<main class="container">
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <h1>
+            Join Our Team
+        </h1>
+
+        <p>
+            Apply for your desired position and start
+            your career journey with TECHCARE.
+            Please complete all required information.
+        </p>
+
+    </section>
+
+
+    <!-- FORM -->
+
+    <form
+        id="registrationForm"
+        action="/register"
+        method="POST"
+        enctype="multipart/form-data">
+
+
+        <!-- PERSONAL INFORMATION -->
+
+        <section class="card">
+
+            <div class="card-title">
+                👤 Personal Information
+            </div>
+
+            <div class="grid">
+
+
+                <div class="form-group">
+
+                    <label>
+                        Full Name *
+                    </label>
+
+                    <input
+                        type="text"
+                        name="fullName"
+                        placeholder="Enter your full name"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Email Address *
+                    </label>
+
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="example@gmail.com"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Mobile Number *
+                    </label>
+
+                    <input
+                        type="tel"
+                        name="mobile"
+                        placeholder="9876543210"
+                        pattern="[0-9]{10}"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Date of Birth
+                    </label>
+
+                    <input
+                        type="date"
+                        name="dob">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Gender
+                    </label>
+
+                    <select name="gender">
+
+                        <option value="">
+                            Select Gender
+                        </option>
+
+                        <option value="Male">
+                            Male
+                        </option>
+
+                        <option value="Female">
+                            Female
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Job Position *
+                    </label>
+
+                    <select
+                        name="position"
+                        required>
+
+                        <option value="">
+                            Select Position
+                        </option>
+
+                        <option value="Cloud Engineer">
+                            Cloud Engineer
+                        </option>
+
+                        <option value="DevOps Engineer">
+                            DevOps Engineer
+                        </option>
+
+                        <option value="AWS Cloud Intern">
+                            AWS Cloud Intern
+                        </option>
+
+                        <option value="Software Developer">
+                            Software Developer
+                        </option>
+
+                        <option value="Frontend Developer">
+                            Frontend Developer
+                        </option>
+
+                        <option value="Backend Developer">
+                            Backend Developer
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EDUCATION -->
+
+        <section class="card">
+
+            <div class="card-title">
+                🎓 Education & Experience
+            </div>
+
+            <div class="grid">
+
+
+                <div class="form-group">
+
+                    <label>
+                        Highest Qualification *
+                    </label>
+
+                    <select
+                        name="education"
+                        required>
+
+                        <option value="">
+                            Select Qualification
+                        </option>
+
+                        <option value="B.Tech">
+                            B.Tech
+                        </option>
+
+                        <option value="B.E">
+                            B.E
+                        </option>
+
+                        <option value="BCA">
+                            BCA
+                        </option>
+
+                        <option value="MCA">
+                            MCA
+                        </option>
+
+                        <option value="M.Tech">
+                            M.Tech
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Experience
+                    </label>
+
+                    <select name="experience">
+
+                        <option value="">
+                            Select Experience
+                        </option>
+
+                        <option value="Fresher">
+                            Fresher
+                        </option>
+
+                        <option value="0-1 Years">
+                            0-1 Years
+                        </option>
+
+                        <option value="1-3 Years">
+                            1-3 Years
+                        </option>
+
+                        <option value="3-5 Years">
+                            3-5 Years
+                        </option>
+
+                        <option value="5+ Years">
+                            5+ Years
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group full">
+
+                    <label>
+                        Address
+                    </label>
+
+                    <textarea
+                        name="address"
+                        placeholder="Enter your complete address">
+                    </textarea>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DOCUMENTS -->
+
+        <section class="card">
+
+            <div class="card-title">
+                📁 Upload Documents
+            </div>
+
+
+            <div class="upload-grid">
+
+
+                <!-- PHOTO -->
+
+                <div class="upload-box">
+
+                    <div class="upload-icon">
+                        👤
+                    </div>
+
+                    <h3>
+                        Profile Photo
+                    </h3>
+
+                    <p>
+                        JPG or PNG • Maximum 5 MB
+                    </p>
+
+                    <input
+                        type="file"
+                        name="profilePhoto"
+                        accept="image/jpeg,image/png"
+                        required>
+
+                </div>
+
+
+                <!-- RESUME -->
+
+                <div class="upload-box">
+
+                    <div class="upload-icon">
+                        📄
+                    </div>
+
+                    <h3>
+                        Resume / CV
+                    </h3>
+
+                    <p>
+                        PDF, DOC or DOCX • Maximum 5 MB
+                    </p>
+
+                    <input
+                        type="file"
+                        name="resume"
+                        accept=".pdf,.doc,.docx"
+                        required>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- TERMS -->
+
+        <section class="card">
+
+            <div class="terms">
+
+                <input
+                    type="checkbox"
+                    id="terms"
+                    required>
+
+                <label for="terms">
+
+                    I confirm that the information provided
+                    above is accurate and complete. I agree
+                    to the company's recruitment terms and
+                    conditions.
+
+                </label>
+
+            </div>
+
+        </section>
+
+
+        <!-- SUBMIT -->
+
+        <div class="submit-area">
+
+            <button
+                type="submit"
+                id="submitButton">
+
+                Submit Application
+
+            </button>
+
+            <p id="message"></p>
+
+        </div>
+
+
+    </form>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    © 2026 TECHCARE Technologies.
+    All Rights Reserved.
+
+</footer>
+
+
+<script>
+
+    const form =
+        document.getElementById(
+            "registrationForm"
+        );
+
+    const button =
+        document.getElementById(
+            "submitButton"
+        );
+
+    const message =
+        document.getElementById(
+            "message"
+        );
+
+
+    form.addEventListener(
+        "submit",
+        async function(event) {
+
+            event.preventDefault();
+
+
+            button.disabled = true;
+
+            button.innerText =
+                "Submitting Application...";
+
+
+            message.innerText = "";
+
+
+            const formData =
+                new FormData(form);
+
+
+            try {
+
+                const response =
+                    await fetch(
+                        "/register",
+                        {
+                            method: "POST",
+                            body: formData
+                        }
+                    );
+
+
+                const result =
+                    await response.json();
+
+
+                if (result.success) {
+
+                    message.innerText =
+                        "✅ " +
+                        result.message +
+                        " Application ID: " +
+                        result.applicationId;
+
+                    message.style.color =
+                        "green";
+
+                    form.reset();
+
+                }
+
+                else {
+
+                    message.innerText =
+                        "❌ " +
+                        result.message;
+
+                    message.style.color =
+                        "red";
+
+                }
+
+            }
+
+            catch(error) {
+
+                console.error(error);
+
+                message.innerText =
+                    "❌ Server error. Please try again.";
+
+                message.style.color =
+                    "red";
+
+            }
+
+
+            button.disabled = false;
+
+            button.innerText =
+                "Submit Application";
+
+        }
+    );
+
+</script>
+
+
+</body>
+
+</html>
+
