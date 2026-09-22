@@ -658,17 +658,17 @@ This project demonstrates how to build and deploy a **real-world AWS cloud appli
     </td>
     <td align="center" width="50%">
       <strong>4. Filled Registration Form / Submission</strong><br><br>
-      <img src="https://github.com/user-attachments/assets/736c9caa-6f10-484d-839f-cae610517336" width="100%">
+      <img src="https://github.com/user-attachments/assets/52bead45-8749-4c9e-9635-cd08b5f48c40" width="100%">
     </td>
   </tr>
   <tr>
     <td align="center" width="50%">
       <strong>5. S3 Bucket — Uploaded Files</strong><br><br>
-      <img src="https://github.com/user-attachments/assets/3f7d8aea-b356-44a0-8cc9-cea912aa1a33" width="100%">
+      <img src="https://github.com/user-attachments/assets/736c9caa-6f10-484d-839f-cae610517336" width="100%">
     </td>
     <td align="center" width="50%">
       <strong>6. DynamoDB Table — Stored Record</strong><br><br>
-      <img src="https://github.com/user-attachments/assets/52bead45-8749-4c9e-9635-cd08b5f48c40" width="100%">
+      <img src="https://github.com/user-attachments/assets/3f7d8aea-b356-44a0-8cc9-cea912aa1a33" width="100%">
     </td>
   </tr>
   <tr>
